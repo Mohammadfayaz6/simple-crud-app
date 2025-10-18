@@ -1,4 +1,3 @@
-import React, { useRef } from 'react'
 import { useState, useEffect } from 'react';
 import { AddEmployeeAPI, DeleteEmployeeAPI, GetAllEmployeesAPI, UpdateEmployeeDetailsAPI } from '../Apis/Employee';
 import toast from 'react-hot-toast';

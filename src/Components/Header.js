@@ -1,17 +1,16 @@
-import React from 'react'
 const Header = () => {
 
     return (
         <header class="bg-gray-800 text-white">
             <div class="container mx-auto flex justify-between items-center py-4 px-6">
 
-                <a href="#" class="text-2xl font-bold">Crud App</a>
+                <p class="text-2xl font-bold">Crud App</p>
 
                 <nav class="hidden md:flex space-x-6">
-                    <a href="#" class="hover:text-gray-300">Home</a>
-                    <a href="#" class="hover:text-gray-300">About</a>
-                    <a href="#" class="hover:text-gray-300">Services</a>
-                    <a href="#" class="hover:text-gray-300">Contact</a>
+                    <p class="hover:text-gray-300">Home</p>
+                    <p class="hover:text-gray-300">About</p>
+                    <p class="hover:text-gray-300">Services</p>
+                    <p class="hover:text-gray-300">Contact</p>
                 </nav>
 
                 <button class="md:hidden text-gray-300 focus:outline-none">
