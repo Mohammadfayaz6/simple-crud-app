@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL;
-console.log("Base API URL:", process.env.REACT_APP_API_URL);
+const API_URL = process.env.REACT_APP_API_BASE_URL;
 
+console.log("Base API URL:", API_URL);
 
 export const AddEmployeeAPI = async (employeeData) => {
   try {
@@ -12,7 +12,7 @@ export const AddEmployeeAPI = async (employeeData) => {
     console.error("Error inserting employee:", error);
     throw error;
   }
-}
+};
 
 export const GetAllEmployeesAPI = async () => {
   try {
@@ -22,17 +22,17 @@ export const GetAllEmployeesAPI = async () => {
     console.error("Error fetching employees:", error);
     throw error;
   }
-}
+};
 
 export const UpdateEmployeeDetailsAPI = async (employee) => {
   try {
     const response = await axios.put(`${API_URL}/employee/update`, employee);
     return response.data;
-  } catch (error  ) {
+  } catch (error) {
     console.error("Error updating employee:", error);
     throw error;
   }
-}
+};
 
 export const DeleteEmployeeAPI = async (employeeId) => {
   try {
@@ -43,5 +43,3 @@ export const DeleteEmployeeAPI = async (employeeId) => {
     throw error;
   }
 };
-
-
