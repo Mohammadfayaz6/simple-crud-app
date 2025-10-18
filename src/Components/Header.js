@@ -1,12 +1,11 @@
 import React from 'react'
-
 const Header = () => {
 
     return (
         <header class="bg-gray-800 text-white">
             <div class="container mx-auto flex justify-between items-center py-4 px-6">
 
-                <a href="#" class="text-2xl font-bold">Simple Crud App</a>
+                <a href="#" class="text-2xl font-bold">Crud App</a>
 
                 <nav class="hidden md:flex space-x-6">
                     <a href="#" class="hover:text-gray-300">Home</a>
